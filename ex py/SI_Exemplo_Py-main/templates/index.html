@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Desconto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Calculadora de Desconto</h2>
+
+<form action="/calcular_desconto" method="post">
+    <label for="preco">Preço:</label>
+    <input type="number" id="preco" name="preco" placeholder="Informe o preço" required>
+    <label for="desconto">Desconto (%):</label>
+    <input type="number" id="desconto" name="desconto" placeholder="Informe o desconto" required>
+    <input type="submit" value="Calcular Desconto">
+</form>
+
+</body>
+</html>
